@@ -11,7 +11,11 @@
 -------------------------------------------------------------*/
 $primary-color: #000000;
 $secondary-color: #5F43FB;
-$base-font-size: 16px;
+$bg-color: #E8FFF2;
+$devider-color: #0BC68E;
+$input-bg-color: #F0F0F0;
+$base-font-size: 18px;
+
 
 /*-----------------------------------------------------------
     1  General Styles
@@ -115,10 +119,12 @@ h2,
     font-size: 2.5rem;
     line-height: 3.5rem;
     margin-bottom: 50px;
+    color: $secondary-color;
 }
 
 .about h2 {
     margin-bottom: 25px;
+    padding-left: 20px;
 }
 
 h3,
@@ -147,6 +153,7 @@ h6,
 
 .about p {
     color: $primary-color;
+    padding: 20px;
 }
 
 p {
@@ -432,7 +439,19 @@ p {
     6. About
   -------------------------------------------------------------*/
 .about {
-    margin-bottom: 150px;
+    padding: 100px 50px 0 100px;
+    background-color: $bg-color;
+}
+
+#principles.about {
+    padding-bottom: 100px;
+}
+
+.devider {
+    height: 8px;
+    width: 80px;
+    margin-top: 100px;
+    background-color: $devider-color;
 }
 
 /*-----------------------------------------------------------
@@ -626,13 +645,19 @@ p {
     9. Contact
   -------------------------------------------------------------*/
 .contact {
-    max-height: 550px;
+    padding-top: 100px;
+    max-height: 650px;
+
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 .email input {
     width: 100%;
     height: 60px;
-    background-color: #F4FAFE;
+    background-color: $input-bg-color;
     border: none;
     padding: 0px 20px;
     color: $primary-color;
@@ -665,7 +690,7 @@ p {
 }
 
 textarea {
-    background-color: #F4FAFE;
+    background-color: $input-bg-color;
     border: none;
     width: 100%;
     padding: 20px;
@@ -680,20 +705,20 @@ textarea {
 footer {
     background-color: $primary-color;
     width: 100%;
-    min-height: 400px;
+    min-height: 250px;
     text-align: center;
-    padding: 70px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
 }
 
 footer h5 {
     color: #fff;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
 }
 
 footer h3 {
     color: $secondary-color;
     font-size: 3rem;
-    margin-bottom: 30px;
 }
 
 .contact-nav li {
@@ -739,7 +764,7 @@ footer h6 {
   -------------------------------------------------------------*/
 @media (max-width: 1700px) {
     .hero-btns {
-        margin-bottom: 260px;
+        margin-bottom: 280px;
     }
 }
 
