@@ -4,7 +4,6 @@ $('.interactive-menu-button a').click(function () {
 
 var scroll = new SmoothScroll('a[href*="#"]');
 
-
 $('.more-btn').click(function () {
   $('#hiden-gallery').toggleClass('hide');
   $('#hiden-gallery').toggleClass('open');
@@ -14,10 +13,6 @@ $('.more-btn').click(function () {
     $(".more-btn-inside").text("Show More.");
   }
 });
-
-
-
-
 
 function slickify() {
   $('.blog-slider').slick({
