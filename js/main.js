@@ -63,7 +63,7 @@ $('.get-in-touch').click(function (e) {
 
   var subject = "Would love to connect";
   
-  document.location.href = "mailto:alon@leandigo.com?subject=" +
+  document.location.href = "mailto:contact@aggadom.org?subject=" +
     encodeURIComponent(subject);
 
   return false;
@@ -74,7 +74,7 @@ $('.partner-with-us').click(function (e) {
 
   var subject = "Would be interesting to explore collaboration";
   
-  document.location.href = "mailto:alon@leandigo.com?subject=" +
+  document.location.href = "mailto:contact@aggadom.org?subject=" +
     encodeURIComponent(subject);
 
   return false;
