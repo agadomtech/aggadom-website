@@ -67,7 +67,7 @@
               <a class="nav-link" data-scroll href="#mission">Mission</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll href="#principles">Values</a>
+              <a class="nav-link" data-scroll href="#values">Values</a>
             </li>
             <li class="nav-item">
               <a class="nav-link get-in-touch" data-scroll href="#">Contact</a>
@@ -81,7 +81,7 @@
       <img src="assets/images/forest_hero.svg" alt="">
       <div class="container">
         <h1>Forest of<br> Knowledge</h1>
-        <p>Network protocol for connecting NFTs<br> using appreciation tokens for the creators</p>
+        <p>Network protocol for connecting NFTs using appreciation tokens for the creators</p>
         <div class="hero-btns">
           <a class="get-in-touch" data-scroll href="#">Get in touch</a>
           <a class="partner-with-us" data-scroll href="#">Partner with us</a>
@@ -92,7 +92,8 @@
   <!-- VISION SECTION -->
   <section id="vision" class="about text-justify">
     <div class="container">
-      <h2>Vision</h2>
+      <h2 class="d-none d-sm-block">Vision</h2>
+      <h2 class="d-block d-sm-none text-center">Vision</h2>
       <!-- Replace About Us Text Under -->
       <p>Our goal is to create a world where any idea, knowledge, achievement and asset are open, accessible and appriciated. A world where individual and collaborative creativity is deeply-rooted and empowered. A world where people can openly share ideas and creations and be rewarded for inspiring and enabling others to create and achieve.<br>
       A world where open source is for anything and the contributors are properly rewarded.</p>
@@ -106,7 +107,8 @@
   <!-- MISSION SECTION -->
   <section id="mission" class="about text-justify">
     <div class="container">
-      <h2>Mission</h2>
+      <h2 class="d-none d-sm-block">Mission</h2>
+      <h2 class="d-block d-sm-none text-center">Mission</h2>
       <!-- Replace About Us Text Under -->
       <p>We are developing the protocol which is the technological infrastructure to enable</p>
       <ul>
@@ -122,8 +124,9 @@
     </div>
   </section>
   <!-- VALUES SECTION -->
-  <section id="principles" class="about">
-    <div class="container">
+  <section id="values" class="about">
+    <!-- larger screens -->
+    <div class="container d-none d-sm-block">
       <h2>Values</h2>
       <div class="row mb-4 mt-5">
         <div class="col-2 text-center"><i class="fab fa-pagelines fa-2x"></i></div>
@@ -147,22 +150,33 @@
         <div class="col text-left">Win-win collaborations are fundamental and essential</div>
       </div>
     </div>
+    <!-- smaller screens -->
+    <div class="container d-block d-sm-none">
+      <h2 class="text-center">Values</h2>
+      <div class="text-center">
+        <i class="fab fa-pagelines fa-2x"></i>
+        <p>Nature is our guide and compass, and the "North" is the balance</p>
+        <i class="far fa-heart fa-2x"></i>
+        <p>Opinion of value is personal, but is unanimously respected</p>
+        <i class="fas fa-paint-brush fa-2x"></i>
+        <p>Creativity of any kind is valuable</p>
+        <i class="fas fa-award fa-2x"></i>
+        <p>Recognition and appreciation for contributions and inspiration are inherent</p>
+        <i class="far fa-handshake fa-2x"></i>
+        <p>Win-win collaborations are fundamental and essential</p>
+      </div>
+    </div>
   </section>
   <!-- FOOTER SECTION -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- <h2>Aggadom</h2> -->
-          <h5>2021 Aggadom</h5>
-          <ul class="social justify-content-center">
-            <li><a href="https://github.com/aggadom"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://twitter.com/aggadom"><i class="fab fa-twitter"></i></a></li>   >
-            <li><a href="https://discord.gg/2WzgPMUTVa"><i class="fab fa-discord"></i></li>
-            <li><a class="get-in-touch" href="#"><i class="far fa-envelope"></i></li>
-          </ul>
-        </div>
-      </div>
+      <h5>2021 Aggadom</h5>
+      <ul class="social justify-content-center row">
+        <li><a href="https://github.com/aggadom"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/aggadom"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://discord.gg/2WzgPMUTVa"><i class="fab fa-discord"></i></a></li>
+        <li><a class="get-in-touch" href="#"><i class="far fa-envelope"></i></a></li>
+      </ul>
     </div>
   </footer>
   <!-- Scripts -->
