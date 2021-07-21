@@ -107,7 +107,7 @@ h2,
   font-size: 2.5rem;
   line-height: 3.5rem;
   margin-bottom: 50px;
-  color: #5F43FB;
+  color: #08644C;
 }
 
 .about h2 {
@@ -130,7 +130,7 @@ h4,
 h5,
 .h5 {
   font-size: 1rem;
-  color: #5F43FB;
+  color: #08644C;
 }
 
 h6,
@@ -148,10 +148,14 @@ h6,
   padding: 0 40px;
 }
 
-p {
-  font-size: 1.1rem;
+ul {
+  font-size: 1.4rem;
+}
+
+p, .p {
+  font-size: 1.4rem;
   line-height: 1.8;
-  color: #6E757A;
+  color: #000000;
   margin-bottom: 15px;
   letter-spacing: 0.025em;
 }
@@ -170,19 +174,19 @@ p {
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  color: #5F43FB;
+  color: #08644C;
 }
 
 .contact-btn i {
   font-size: 2rem;
   width: 100px;
   height: 100px;
-  color: #5F43FB;
+  color: #08644C;
 }
 
 .hero-btns a:first-child {
-  background-color: #5F43FB;
-  border: 2px solid #5F43FB;
+  background-color: #08644C;
+  border: 2px solid #08644C;
   color: #fff;
   padding: 17px 35px;
   font-size: 1.0rem;
@@ -193,7 +197,7 @@ p {
 
 .hero-btns a:first-child:hover {
   background-color: #fff;
-  border: 2px solid #5F43FB;
+  border: 2px solid #08644C;
   color: #000000;
   padding: 17px 35px;
   font-size: 1.0rem;
@@ -209,7 +213,7 @@ p {
 }
 
 .hero-btns a:last-child:hover {
-  color: #5F43FB;
+  color: #08644C;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -296,7 +300,7 @@ p {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-  color: #5F43FB !important;
+  color: #08644C !important;
   text-decoration: none;
   background-color: #000000;
 }
@@ -307,7 +311,7 @@ p {
 }
 
 .service-btn a:hover {
-  color: #5F43FB !important;
+  color: #08644C !important;
 }
 
 .more-btn {
@@ -317,7 +321,7 @@ p {
 
 .more-btn a {
   font-size: 1.2rem;
-  color: #5F43FB !important;
+  color: #08644C !important;
   cursor: pointer;
   padding: 20px 30px;
 }
@@ -355,7 +359,7 @@ p {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #5F43FB;
+  color: #08644C;
 }
 
 .navbar {
@@ -372,7 +376,7 @@ p {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #5F43FB;
+  color: #08644C;
 }
 
 .hero img {
@@ -389,6 +393,7 @@ p {
 }
 
 .hero p {
+  color: #636363;
   margin-bottom: 50px;
   font-size: 1.6rem;
   max-width: 30vw;
@@ -434,9 +439,19 @@ p {
 /*-----------------------------------------------------------
     6. About
   -------------------------------------------------------------*/
+.about#vision {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.about#values {
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
 .about {
-  padding: 100px 50px 0 100px;
-  background-color: #E8FFF2;
+  padding: 50px;
+  background-color: #C8E7E1;
 }
 
 #values.about {
@@ -446,108 +461,31 @@ p {
 .devider {
   height: 8px;
   width: 80px;
-  margin-top: 100px;
-  background-color: #0BC68E;
+  margin-top: 50px;
+  background-color: #54C3C0;
 }
 
 /*-----------------------------------------------------------
-   7. Portfolio
+   7. Team
   -------------------------------------------------------------*/
-.portfolio-aside img {
-  margin-top: 20px;
-  position: absolute;
-  left: -20px;
+.team {
+  padding: 100px 50px;
 }
 
-.work-box {
-  margin-bottom: 30px;
-}
-
-.work-box img {
-  width: 370px;
-  height: auto;
-}
-
-/* Portfolio Gallery Hover */
-.photobox {
-  display: inline-block;
-}
-
-.photobox__previewbox {
-  position: relative;
-  overflow: hidden;
-}
-
-.photobox__preview {
-  display: block;
-  max-width: 100%;
-}
-
-.photobox__previewbox:before {
-  content: "";
-}
-
-.photobox_type10 .photobox__previewbox:before {
-  width: 0;
-  height: 0;
-  padding: 25%;
-  background-color: #000000;
-  opacity: 0.8;
+.team img {
+  width: 80%;
+  min-width: 300px;
   border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transition: -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
-  transition: -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
-  transition: transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
-  transition: transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease, -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
-  will-change: transform;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
 }
 
-.photobox_type10:hover .photobox__previewbox:before {
-  -webkit-transform: translate(-50%, -50%) scale(4);
-          transform: translate(-50%, -50%) scale(4);
-  -webkit-transition-duration: var(--photoboxAnimationDuration, 0.8s);
-          transition-duration: var(--photoboxAnimationDuration, 0.8s);
+.team h4 {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-.photobox_type10 .photobox__label {
-  width: 95%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
-  transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
-  transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
-  transition: opacity calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
-  will-change: opacity, transform;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 200%);
-          transform: translate(-50%, 200%);
-  z-index: 3;
-  color: #fff;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.photobox_type10:hover .photobox__label {
-  opacity: 1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition-duration: calc(var(--photoboxAnimationDuration, .8s) / 2);
-          transition-duration: calc(var(--photoboxAnimationDuration, .8s) / 2);
-  -webkit-transition-delay: calc(var(--photoboxAnimationDuration, .8s) / 4);
-          transition-delay: calc(var(--photoboxAnimationDuration, .8s) / 4);
-}
-
-.hide {
-  display: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.team .profile {
+  margin: 5px 20px;
+  color: #636363;
 }
 
 /*-----------------------------------------------------------
@@ -610,7 +548,7 @@ p {
 }
 
 .blog-first {
-  background-color: #5F43FB;
+  background-color: #08644C;
 }
 
 .blog-first h6 {
@@ -634,7 +572,7 @@ p {
 }
 
 #blog-btn {
-  color: #5F43FB;
+  color: #08644C;
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
@@ -727,7 +665,7 @@ footer h5 {
 }
 
 footer h3 {
-  color: #5F43FB;
+  color: #08644C;
   font-size: 3rem;
 }
 
@@ -743,7 +681,7 @@ footer h3 {
 }
 
 .contact-nav a:hover {
-  color: #5F43FB;
+  color: #08644C;
 }
 
 footer h6 {
@@ -765,7 +703,7 @@ footer h6 {
 }
 
 .social li a:hover {
-  color: #5F43FB;
+  color: #08644C;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -833,7 +771,7 @@ footer h6 {
     font-size: 0.8rem;
   }
   .hero-btns {
-    margin-bottom: 120px;
+    margin-top: 70px;
   }
 }
 
@@ -863,27 +801,17 @@ footer h6 {
   .contact-btn {
     display: none;
   }
-  .hero-btns {
-    margin-bottom: 70px;
-  }
   .service-txt {
     text-align: center;
   }
   .about img {
     margin-bottom: 70px;
   }
-  .about {
-    padding: 70px 50px 0 50px;
+  .team img {
+    width: 70%;
   }
-  .portfolio {
-    text-align: center;
-  }
-  .blog {
-    text-align: center;
-  }
-  .blog-box {
-    margin: 0 auto;
-    margin-bottom: 25px;
+  .team .member:first-of-type {
+    margin-bottom: 100px;
   }
   .contact {
     text-align: center;
@@ -892,19 +820,17 @@ footer h6 {
 
 @media (max-width: 768px) {
   p, li {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .hero h1 {
     font-size: 3.5rem;
-  }
-  .hero p {
-    font-size: 1rem;
   }
   .devider {
     margin-top: 20px;
   }
   .about {
-    padding: 40px 10px 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .about ul {
     padding: 0 20px;
