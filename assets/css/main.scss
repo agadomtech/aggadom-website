@@ -12,7 +12,7 @@
 $primary-color: #000000;
 $secondary-color: #08644c;
 $third-color: rgb(99, 99, 99);
-$bg-color: #c8e7e1;
+$bg-color: $primary-color;
 $devider-color: #6eb396;
 $input-bg-color: #f0f0f0;
 $base-font-size: 18px;
@@ -151,7 +151,7 @@ h6,
 }
 
 .about p {
-  color: $primary-color;
+  color: $input-bg-color;
   padding: 20px;
 }
 
@@ -219,16 +219,16 @@ p,
   transition: all 0.3s ease;
 }
 
-.hero-btns a:last-child {
-  color: $primary-color;
-  padding: 17px 35px;
-  font-size: 1rem;
-}
+// .hero-btns a:last-child {
+//   color: $primary-color;
+//   padding: 17px 35px;
+//   font-size: 1rem;
+// }
 
-.hero-btns a:last-child:hover {
-  color: $secondary-color;
-  transition: all 0.3s ease;
-}
+// .hero-btns a:last-child:hover {
+//   color: $secondary-color;
+//   transition: all 0.3s ease;
+// }
 
 .navbar-light .navbar-toggler {
   color: $primary-color;

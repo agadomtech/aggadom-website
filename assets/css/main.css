@@ -140,7 +140,7 @@ h6,
 }
 
 .about p {
-  color: #000000;
+  color: #f0f0f0;
   padding: 20px;
 }
 
@@ -203,18 +203,6 @@ p,
   padding: 17px 35px;
   font-size: 1rem;
   border-radius: 30px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.hero-btns a:last-child {
-  color: #000000;
-  padding: 17px 35px;
-  font-size: 1rem;
-}
-
-.hero-btns a:last-child:hover {
-  color: #08644c;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -452,7 +440,7 @@ p,
 
 .about {
   padding: 50px;
-  background-color: #c8e7e1;
+  background-color: #000000;
 }
 
 #values.about {
