@@ -1,26 +1,33 @@
 /*-----------------------------------------------------------
-    0. Parameter definitions
--------------------------------------------------------------*/
-$primary-color: #000000;
-$secondary-color: #08644c;
-$third-color: rgb(99, 99, 99);
-$bg-color: $primary-color;
-$devider-color: #6eb396;
-$input-bg-color: #f0f0f0;
-$base-font-size: 1rem;
-$base-font-family: "Lexend";
-
-/*-----------------------------------------------------------
+    0  Parameter definitions
     1  General Styles
     2  Typography
     3  Buttons & Links 
-    4  Header
+    4  Hero
     5  About
     6  Team
     7  Contact
     8  Footer
     9  Responsive 
 -------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+    0. Parameter definitions
+-------------------------------------------------------------*/
+$primary-txt-color: #ffffff;
+$primary-bg-color: #000000;
+$gradient-bg-color: linear-gradient(
+  180deg,
+  #508193 0%,
+  #5b9279 99.98%,
+  #4f7f95 99.99%,
+  rgba(79, 127, 150, 0) 100%,
+  rgba(79, 127, 150, 0) 100%
+);
+$devider-color: #6eb396;
+$input-bg-color: #f0f0f0;
+$base-font-size: 1rem;
+$base-font-family: "Lexend";
 
 /*-----------------------------------------------------------
     1. General Styles 
@@ -46,7 +53,7 @@ html {
 
 a {
   font-weight: 600;
-  color: $primary-color;
+  color: $primary-txt-color;
   text-decoration: none;
   letter-spacing: 1px;
   position: relative;
@@ -75,7 +82,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: $primary-color;
+  color: $primary-txt-color;
   font-weight: 500;
   letter-spacing: 0px;
 }
@@ -89,7 +96,8 @@ h6,
     2. Typography 
   ------------------------------------------------------------*/
 body {
-  color: $primary-color;
+  background-color: $primary-bg-color;
+  color: $primary-txt-color;
   font-family: $base-font-family;
   font-size: 1.5 * $base-font-size;
   font-weight: 300;
@@ -111,7 +119,7 @@ h2,
   font-size: 2.5 * $base-font-size;
   line-height: 3.5rem;
   margin-bottom: 50px;
-  color: $secondary-color;
+  color: $primary-txt-color;
 }
 
 h3,
@@ -129,7 +137,7 @@ h4,
 h5,
 .h5 {
   font-size: $base-font-size;
-  color: $secondary-color;
+  color: $primary-txt-color;
 }
 
 h6,
@@ -146,7 +154,7 @@ p {
 p,
 .p {
   line-height: 1.8;
-  color: $primary-color;
+  color: $primary-txt-color;
   margin-bottom: 15px;
   letter-spacing: -0.6px;
 }
@@ -166,19 +174,19 @@ p,
   font-size: 1.2rem;
   font-family: $base-font-family;
   font-weight: 600;
-  color: $secondary-color;
+  color: $primary-txt-color;
 }
 
 .contact-btn i {
   font-size: 2rem;
   width: 100px;
   height: 100px;
-  color: $secondary-color;
+  color: $primary-txt-color;
 }
 
 .hero-btns a:first-child {
-  background-color: $secondary-color;
-  border: 2px solid $secondary-color;
+  background-color: $primary-txt-color;
+  border: 2px solid $primary-txt-color;
   color: #fff;
   padding: 17px 35px;
   font-size: 1rem;
@@ -190,8 +198,8 @@ p,
 
 .hero-btns a:first-child:hover {
   background-color: #fff;
-  border: 2px solid $secondary-color;
-  color: $primary-color;
+  border: 2px solid $primary-txt-color;
+  color: $primary-txt-color;
   padding: 17px 35px;
   font-size: 1rem;
   border-radius: 30px;
@@ -199,7 +207,7 @@ p,
 }
 
 .navbar-light .navbar-toggler {
-  color: $primary-color;
+  color: $primary-txt-color;
   border: none;
 }
 
@@ -226,7 +234,7 @@ p,
 .interactive-menu-button a span {
   height: 4px;
   position: absolute;
-  background: $primary-color;
+  background: $primary-txt-color;
   text-indent: -999em;
   width: 100%;
   top: 6px;
@@ -237,7 +245,7 @@ p,
 .interactive-menu-button a span:after {
   content: "";
   height: 4px;
-  background: $primary-color;
+  background: $primary-txt-color;
   width: 100%;
   position: absolute;
   top: -6px;
@@ -264,7 +272,7 @@ p,
 .navbar-nav .dropdown-menu {
   text-align: center;
   border: 0;
-  background-color: $primary-color;
+  background-color: $primary-txt-color;
 }
 
 .navbar-nav .dropdown-menu a {
@@ -276,7 +284,7 @@ p,
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-  color: $secondary-color !important;
+  color: $primary-txt-color !important;
   text-decoration: none;
   background-color: $primary-color;
 }
@@ -295,7 +303,7 @@ p,
 }
 
 /*-----------------------------------------------------------
-    4. Header
+    4. Hero
   -------------------------------------------------------------*/
 .navbar-light .navbar-nav .nav-link {
   color: $primary-color;
@@ -351,37 +359,15 @@ p,
 }
 
 /*-----------------------------------------------------------
-    5. About
+   5. About
   -------------------------------------------------------------*/
-
-.about#vision {
-  padding-top: 100px;
-  padding-bottom: 0;
-}
-
-.about#values {
-  padding-top: 0;
-  padding-bottom: 100px;
-}
-
 .about {
   padding: 50px;
   background-color: $bg-color;
 }
 
-#values.about {
-  padding-bottom: 100px;
-}
-
-.devider {
-  height: 8px;
-  width: 80px;
-  margin-top: 50px;
-  background-color: $devider-color;
-}
-
 /*-----------------------------------------------------------
-   6. Team
+    6. Team
   -------------------------------------------------------------*/
 .team {
   padding: 100px 50px;
