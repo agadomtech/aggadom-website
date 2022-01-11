@@ -1,11 +1,4 @@
 /*-----------------------------------------------------------
-    Theme Name: Doob | Simple Agency HTML Template
-    Description: Simple Agency HTML Template
-    Author: Graphberry
-    Author URI: https://www.graphberry.com/
-    Version: 1.0
--------------------------------------------------------------*/
-/*-----------------------------------------------------------
     0. Parameter definitions
 -------------------------------------------------------------*/
 /*-----------------------------------------------------------
@@ -13,13 +6,11 @@
     2  Typography
     3  Buttons & Links 
     4  Header
-    5  Services
-    6  About  
-    7  Portfolio
-    8  Blog
-    9  Contact
-    10 Footer
-    11 Responsive 
+    5  About
+    6  Team
+    7  Contact
+    8  Footer
+    9  Responsive 
 -------------------------------------------------------------*/
 /*-----------------------------------------------------------
     1. General Styles 
@@ -73,8 +64,8 @@ h5,
 h6,
 .h6 {
   color: #000000;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 0px;
 }
 
 :active,
@@ -87,9 +78,9 @@ h6,
   ------------------------------------------------------------*/
 body {
   color: #000000;
-  font-family: "Work Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: "Lexend";
+  font-size: 1.5rem;
+  font-weight: 300;
   overflow-x: hidden;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
@@ -99,7 +90,9 @@ body {
 h1,
 .h1 {
   font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 20px;
+  letter-spacing: -3px;
 }
 
 h2,
@@ -108,11 +101,6 @@ h2,
   line-height: 3.5rem;
   margin-bottom: 50px;
   color: #08644c;
-}
-
-.about h2 {
-  margin-bottom: 25px;
-  padding-left: 20px;
 }
 
 h3,
@@ -124,7 +112,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h5,
@@ -139,26 +127,17 @@ h6,
   margin-bottom: 10px;
 }
 
-.about p {
-  color: #f0f0f0;
-  padding: 20px;
-}
-
-.about ul {
-  padding: 0 40px;
-}
-
-ul {
+ul,
+p {
   font-size: 1.4rem;
 }
 
 p,
 .p {
-  font-size: 1.4rem;
   line-height: 1.8;
   color: #000000;
   margin-bottom: 15px;
-  letter-spacing: 0.025em;
+  letter-spacing: -0.6px;
 }
 
 /*-----------------------------------------------------------
@@ -173,7 +152,7 @@ p,
   background-color: #fff;
   border-radius: 3px;
   font-size: 1.2rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Lexend";
   font-weight: 600;
   color: #08644c;
 }
@@ -294,31 +273,6 @@ p,
   background-color: #000000;
 }
 
-.service-btn a {
-  color: #fff !important;
-  font-size: 0.8rem !important;
-}
-
-.service-btn a:hover {
-  color: #08644c !important;
-}
-
-.more-btn {
-  text-align: center;
-  margin: 15px 0px 100px 0px;
-}
-
-.more-btn a {
-  font-size: 1.2rem;
-  color: #08644c !important;
-  cursor: pointer;
-  padding: 20px 30px;
-}
-
-.more-btn a:hover {
-  color: #000000 !important;
-}
-
 .contact-btn {
   text-align: center;
   margin-top: 70px;
@@ -385,48 +339,11 @@ p,
   color: #636363;
   margin-bottom: 50px;
   font-size: 1.6rem;
-  max-width: 35vw;
+  max-width: 40vw;
 }
 
 /*-----------------------------------------------------------
-    5. Services
-  -------------------------------------------------------------*/
-.services {
-  padding: 50px 0px;
-}
-
-.services p {
-  font-size: 1rem;
-  color: #000000;
-  line-height: 1.5rem;
-}
-
-.side-img img {
-  position: absolute;
-  left: -20px;
-}
-
-.side2-img img {
-  position: absolute;
-  right: -20px;
-  top: 1300px;
-}
-
-.service-box {
-  background-color: #fff;
-  padding: 40px 45px;
-  margin: 10px;
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(28, 31, 33, 0.15);
-  box-shadow: 0px 3px 7px 0px rgba(28, 31, 33, 0.15);
-  min-height: 400px;
-}
-
-.service-box img {
-  margin-bottom: 30px;
-}
-
-/*-----------------------------------------------------------
-    6. About
+    5. About
   -------------------------------------------------------------*/
 .about#vision {
   padding-top: 100px;
@@ -455,7 +372,7 @@ p,
 }
 
 /*-----------------------------------------------------------
-   7. Team
+   6. Team
   -------------------------------------------------------------*/
 .team {
   padding: 100px 50px;
@@ -478,108 +395,7 @@ p,
 }
 
 /*-----------------------------------------------------------
-    8. Blog
-  -------------------------------------------------------------*/
-.blog-aside img {
-  position: absolute;
-  right: -20px;
-  margin-top: 200px;
-}
-
-.blog {
-  padding: 25px 0px;
-  margin-bottom: 100px;
-}
-
-.blog-box {
-  background-color: #fff;
-  min-height: 330px;
-  max-width: 370px;
-  padding: 50px 25px;
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(28, 31, 33, 0.15);
-  box-shadow: 0px 3px 7px 0px rgba(28, 31, 33, 0.15);
-  margin: 10px;
-}
-
-.blog-box p:nth-child(2) {
-  font-size: 0.9rem;
-  color: #6e757a !important;
-}
-
-.blog-box p:nth-child(3) {
-  font-size: 1.2rem;
-  color: #000000;
-}
-
-.slick-prev {
-  position: absolute;
-  right: 60px;
-  top: -50px;
-}
-
-.slick-next {
-  position: absolute;
-  right: 10px;
-  top: -50px;
-}
-
-.blog-slider button {
-  font-size: 3rem;
-  border: none;
-  background-color: #fff;
-  color: #bbbbbc;
-}
-
-.blog-slider button:hover {
-  color: #000000;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.blog-first {
-  background-color: #08644c;
-}
-
-.blog-first h6 {
-  color: #fff;
-}
-
-.blog-first p:nth-child(2) {
-  color: #fff !important;
-}
-
-.blog-first p:nth-child(3) {
-  color: #fff;
-}
-
-.blog-slider {
-  cursor: pointer;
-}
-
-.hide-blog {
-  display: none;
-}
-
-#blog-btn {
-  color: #08644c;
-  font-size: 1.2rem;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 600;
-  background-color: #fff;
-  border: none;
-  margin-top: 20px;
-}
-
-#blog-btn:hover {
-  color: #000000;
-}
-
-.hide-me {
-  display: none;
-}
-
-/*-----------------------------------------------------------
-    9. Contact
+    7. Contact
   -------------------------------------------------------------*/
 .contact {
   padding-top: 100px;
@@ -637,7 +453,7 @@ textarea {
 }
 
 /*-----------------------------------------------------------
-    10. Footer
+    8. Footer
   -------------------------------------------------------------*/
 footer {
   background-color: #000000;
@@ -650,12 +466,9 @@ footer {
 footer h5 {
   color: #fff;
   padding-bottom: 30px;
-  font-family: sans-serif;
-}
-
-footer h3 {
-  color: #08644c;
-  font-size: 3rem;
+  font-family: "Lexend";
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .contact-nav li {
@@ -698,7 +511,7 @@ footer h6 {
 }
 
 /*-----------------------------------------------------------
-    11. Responsive
+    9. Responsive
   -------------------------------------------------------------*/
 @media (max-width: 2000px) {
   .hero img {
@@ -746,6 +559,7 @@ footer h6 {
   }
   .hero h1 {
     margin-top: 150px;
+    letter-spacing: -3px;
   }
   h2 {
     font-size: 2rem;
