@@ -2,13 +2,12 @@
     0  Parameter definitions
     1  General Styles
     2  Typography
-    3  Buttons & Links 
-    4  Header
-    5  About
-    6  Team
-    7  Contact
-    8  Footer
-    9  Responsive 
+    3  Hero
+    4  About
+    5  Team
+    6  Contact
+    7  Footer
+    8 Responsive 
 -------------------------------------------------------------*/
 /*-----------------------------------------------------------
     0. Parameter definitions
@@ -74,10 +73,16 @@ h6,
   outline: none !important;
 }
 
+.container-fluid {
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
 /*-----------------------------------------------------------
     2. Typography 
   ------------------------------------------------------------*/
 body {
+  background-color: #000000;
   color: #ffffff;
   font-family: "Lexend";
   font-size: 1.5rem;
@@ -99,9 +104,10 @@ h1,
 h2,
 .h2 {
   font-size: 2.5rem;
+  font-weight: 200;
   line-height: 3.5rem;
   margin-bottom: 50px;
-  color: #08644c;
+  color: #ffffff;
 }
 
 h3,
@@ -119,7 +125,7 @@ h4,
 h5,
 .h5 {
   font-size: 1rem;
-  color: #08644c;
+  color: #ffffff;
 }
 
 h6,
@@ -142,172 +148,29 @@ p,
 }
 
 /*-----------------------------------------------------------
-    3. Buttons & Links
+    3. Hero
   -------------------------------------------------------------*/
-.contact-btn button {
-  width: 200px;
-  height: 60px;
-  border: 0px;
-  -webkit-box-shadow: 0px 4px 6px 0px rgba(30, 32, 33, 0.07);
-  box-shadow: 0px 4px 6px 0px rgba(30, 32, 33, 0.07);
-  background-color: #fff;
-  border-radius: 3px;
-  font-size: 1.2rem;
-  font-family: "Lexend";
-  font-weight: 600;
-  color: #08644c;
+#hero {
+  width: 100vw;
+  height: 100vh;
+  background: center no-repeat url("../images/splash.svg");
 }
 
-.contact-btn i {
-  font-size: 2rem;
-  width: 100px;
-  height: 100px;
-  color: #08644c;
+#hero .value {
+  margin: auto;
+  padding: 15% 1%;
 }
 
-.hero-btns a:first-child {
-  background-color: #08644c;
-  border: 2px solid #08644c;
-  color: #fff;
-  padding: 17px 35px;
-  font-size: 1rem;
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
-  box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
-}
-
-.hero-btns a:first-child:hover {
-  background-color: #fff;
-  border: 2px solid #08644c;
-  color: #ffffff;
-  padding: 17px 35px;
-  font-size: 1rem;
-  border-radius: 30px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.navbar-light .navbar-toggler {
-  color: #ffffff;
-  border: none;
-}
-
-.navbar-toggler {
-  padding: 0.5rem 1.2rem 0.25rem 0rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-.interactive-menu-button {
-  position: relative;
-}
-
-.interactive-menu-button a {
-  width: 20px;
-  height: 20px;
-  display: block;
-  position: relative;
-}
-
-.interactive-menu-button a span {
-  height: 4px;
-  position: absolute;
-  background: #ffffff;
-  text-indent: -999em;
-  width: 100%;
-  top: 6px;
-  -webkit-transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
-  transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
-}
-
-.interactive-menu-button a span:before,
-.interactive-menu-button a span:after {
-  content: "";
-  height: 4px;
-  background: #ffffff;
-  width: 100%;
-  position: absolute;
-  top: -6px;
-  left: 0;
-  -webkit-transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
-  transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
-}
-
-.interactive-menu-button a span:after {
-  top: 6px;
-}
-
-.interactive-menu-button a.active span {
-  background: transparent;
-}
-
-.interactive-menu-button a.active span:before {
-  -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
-          transform: translateY(6px) translateX(1px) rotate(45deg);
-}
-
-.interactive-menu-button a.active span:after {
-  -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
-          transform: translateY(-6px) translateX(1px) rotate(-45deg);
-}
-
-.navbar-nav .dropdown-menu {
-  text-align: center;
-  border: 0;
-  background-color: #ffffff;
-}
-
-.navbar-nav .dropdown-menu a {
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.3rem;
-  margin: 10px 0px;
-}
-
-.dropdown-item:focus,
-.dropdown-item:hover {
-  color: #08644c !important;
-  text-decoration: none;
-  background-color: #ffffff;
-}
-
-.contact-btn {
-  text-align: center;
-  margin-top: 70px;
-}
-
-.contact-btn a {
-  color: #fff !important;
-}
-
-.contact-btn a:hover {
-  color: #ffffff !important;
-}
-
-/*-----------------------------------------------------------
-    4. Header
-  -------------------------------------------------------------*/
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff;
   font-size: 1.1rem;
-}
-
-.hero-btns {
-  margin-bottom: 350px;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #08644c;
-}
-
-.navbar {
-  padding: 50px 0 0 0;
+  color: #ffffff;
 }
 
 .navbar-light .navbar-brand {
@@ -320,7 +183,11 @@ p,
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #08644c;
+  color: #ffffff;
+}
+
+.hero-btns {
+  margin-bottom: 350px;
 }
 
 .hero img {
@@ -337,22 +204,23 @@ p,
 }
 
 .hero p {
-  color: #636363;
+  color: #ffffff;
   margin-bottom: 50px;
   font-size: 1.6rem;
   max-width: 40vw;
 }
 
 /*-----------------------------------------------------------
-   5. About
+   4. About
   -------------------------------------------------------------*/
-.about {
-  padding: 50px;
-  background-color: #000000;
+#about {
+  padding: 10%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5b9279), color-stop(99.98%, #4f7f95), color-stop(99.99%, #508193), color-stop(100%, rgba(79, 127, 150, 0)), to(rgba(79, 127, 150, 0)));
+  background: linear-gradient(#5b9279 0%, #4f7f95 99.98%, #508193 99.99%, rgba(79, 127, 150, 0) 100%, rgba(79, 127, 150, 0) 100%);
 }
 
 /*-----------------------------------------------------------
-    6. Team
+    5. Team
   -------------------------------------------------------------*/
 .team {
   padding: 100px 50px;
@@ -371,76 +239,31 @@ p,
 
 .team .profile {
   margin: 5px 20px;
-  color: #636363;
+  color: #ffffff;
 }
 
 /*-----------------------------------------------------------
-    7. Contact
+    6. Follow
   -------------------------------------------------------------*/
-.contact {
-  padding-top: 100px;
-  max-height: 650px;
-}
-
-.contact .container {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.email input {
-  width: 100%;
-  height: 60px;
-  background-color: #f0f0f0;
-  border: none;
-  padding: 0px 20px;
+.follow {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5b9279), color-stop(99.98%, #4f7f95), color-stop(99.99%, #508193), color-stop(100%, rgba(79, 127, 150, 0)), to(rgba(79, 127, 150, 0)));
+  background: linear-gradient(#5b9279 0%, #4f7f95 99.98%, #508193 99.99%, rgba(79, 127, 150, 0) 100%, rgba(79, 127, 150, 0) 100%);
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 15px;
 }
 
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #ffffff;
-  font-weight: 600;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #ffffff;
-  font-weight: 600;
-}
-
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #ffffff;
-  font-weight: 600;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #ffffff;
-  font-weight: 600;
-}
-
-textarea {
-  background-color: #f0f0f0;
-  border: none;
-  width: 100%;
-  padding: 20px;
-  margin-top: 15px;
-  color: #ffffff;
-  font-weight: 600;
+.follow:hover {
+  color: inherit !important;
+  background-position: right center;
 }
 
 /*-----------------------------------------------------------
-    8. Footer
+    7. Footer
   -------------------------------------------------------------*/
 footer {
-  background-color: #ffffff;
-  width: 100%;
-  min-height: 250px;
-  text-align: center;
-  padding: 60px 0px 0px 0px;
+  background-color: #000000;
 }
 
 footer h5 {
@@ -463,7 +286,7 @@ footer h5 {
 }
 
 .contact-nav a:hover {
-  color: #08644c;
+  color: #ffffff;
 }
 
 footer h6 {
@@ -485,13 +308,13 @@ footer h6 {
 }
 
 .social li a:hover {
-  color: #08644c;
+  color: #ffffff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 /*-----------------------------------------------------------
-    9. Responsive
+    8. Responsive
   -------------------------------------------------------------*/
 @media (max-width: 2000px) {
   .hero img {

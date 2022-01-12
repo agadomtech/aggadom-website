@@ -2,13 +2,12 @@
     0  Parameter definitions
     1  General Styles
     2  Typography
-    3  Buttons & Links 
-    4  Hero
-    5  About
-    6  Team
-    7  Contact
-    8  Footer
-    9  Responsive 
+    3  Hero
+    4  About
+    5  Team
+    6  Contact
+    7  Footer
+    8 Responsive 
 -------------------------------------------------------------*/
 
 /*-----------------------------------------------------------
@@ -17,10 +16,9 @@
 $primary-txt-color: #ffffff;
 $primary-bg-color: #000000;
 $gradient-bg-color: linear-gradient(
-  180deg,
-  #508193 0%,
-  #5b9279 99.98%,
-  #4f7f95 99.99%,
+  #5b9279 0%,
+  #4f7f95 99.98%,
+  #508193 99.99%,
   rgba(79, 127, 150, 0) 100%,
   rgba(79, 127, 150, 0) 100%
 );
@@ -92,6 +90,11 @@ h6,
   outline: none !important;
 }
 
+.container-fluid {
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+
 /*-----------------------------------------------------------
     2. Typography 
   ------------------------------------------------------------*/
@@ -117,6 +120,7 @@ h1,
 h2,
 .h2 {
   font-size: 2.5 * $base-font-size;
+  font-weight: 200;
   line-height: 3.5rem;
   margin-bottom: 50px;
   color: $primary-txt-color;
@@ -160,169 +164,29 @@ p,
 }
 
 /*-----------------------------------------------------------
-    3. Buttons & Links
+    3. Hero
   -------------------------------------------------------------*/
-.contact-btn button {
-  width: 200px;
-  height: 60px;
-  border: 0px;
-  -webkit-box-shadow: 0px 4px 6px 0px rgba(30, 32, 33, 0.07);
-  -moz-box-shadow: 0px 4px 6px 0px rgba(30, 32, 33, 0.07);
-  box-shadow: 0px 4px 6px 0px rgba(30, 32, 33, 0.07);
-  background-color: #fff;
-  border-radius: 3px;
-  font-size: 1.2rem;
-  font-family: $base-font-family;
-  font-weight: 600;
-  color: $primary-txt-color;
+#hero {
+  width: 100vw;
+  height: 100vh;
+  background: center no-repeat url("../images/splash.svg");
+
+  .value {
+    margin: auto;
+    padding: 15% 1%;
+  }
 }
 
-.contact-btn i {
-  font-size: 2rem;
-  width: 100px;
-  height: 100px;
-  color: $primary-txt-color;
-}
-
-.hero-btns a:first-child {
-  background-color: $primary-txt-color;
-  border: 2px solid $primary-txt-color;
-  color: #fff;
-  padding: 17px 35px;
-  font-size: 1rem;
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
-  -moz-box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
-  box-shadow: 0px 4px 5px 0px rgba(255, 57, 70, 0.15);
-}
-
-.hero-btns a:first-child:hover {
-  background-color: #fff;
-  border: 2px solid $primary-txt-color;
-  color: $primary-txt-color;
-  padding: 17px 35px;
-  font-size: 1rem;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
-
-.navbar-light .navbar-toggler {
-  color: $primary-txt-color;
-  border: none;
-}
-
-.navbar-toggler {
-  padding: 0.5rem 1.2rem 0.25rem 0rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-.interactive-menu-button {
-  position: relative;
-}
-
-.interactive-menu-button a {
-  width: 20px;
-  height: 20px;
-  display: block;
-  position: relative;
-}
-
-.interactive-menu-button a span {
-  height: 4px;
-  position: absolute;
-  background: $primary-txt-color;
-  text-indent: -999em;
-  width: 100%;
-  top: 6px;
-  transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
-}
-
-.interactive-menu-button a span:before,
-.interactive-menu-button a span:after {
-  content: "";
-  height: 4px;
-  background: $primary-txt-color;
-  width: 100%;
-  position: absolute;
-  top: -6px;
-  left: 0;
-  transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
-}
-
-.interactive-menu-button a span:after {
-  top: 6px;
-}
-
-.interactive-menu-button a.active span {
-  background: transparent;
-}
-
-.interactive-menu-button a.active span:before {
-  transform: translateY(6px) translateX(1px) rotate(45deg);
-}
-
-.interactive-menu-button a.active span:after {
-  transform: translateY(-6px) translateX(1px) rotate(-45deg);
-}
-
-.navbar-nav .dropdown-menu {
-  text-align: center;
-  border: 0;
-  background-color: $primary-txt-color;
-}
-
-.navbar-nav .dropdown-menu a {
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.3rem;
-  margin: 10px 0px;
-}
-
-.dropdown-item:focus,
-.dropdown-item:hover {
-  color: $primary-txt-color !important;
-  text-decoration: none;
-  background-color: $primary-color;
-}
-
-.contact-btn {
-  text-align: center;
-  margin-top: 70px;
-}
-
-.contact-btn a {
-  color: #fff !important;
-}
-
-.contact-btn a:hover {
-  color: $primary-color !important;
-}
-
-/*-----------------------------------------------------------
-    4. Hero
-  -------------------------------------------------------------*/
 .navbar-light .navbar-nav .nav-link {
-  color: $primary-color;
+  color: $primary-txt-color;
   font-size: 1.1rem;
-}
-
-.hero-btns {
-  margin-bottom: 350px;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: $secondary-color;
-}
-
-.navbar {
-  padding: 50px 0 0 0;
+  color: $primary-txt-color;
 }
 
 .navbar-light .navbar-brand {
@@ -335,7 +199,11 @@ p,
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: $secondary-color;
+  color: $primary-txt-color;
+}
+
+.hero-btns {
+  margin-bottom: 350px;
 }
 
 .hero img {
@@ -352,22 +220,22 @@ p,
 }
 
 .hero p {
-  color: $third-color;
+  color: $primary-txt-color;
   margin-bottom: 50px;
   font-size: 1.6rem;
   max-width: 40vw;
 }
 
 /*-----------------------------------------------------------
-   5. About
+   4. About
   -------------------------------------------------------------*/
-.about {
-  padding: 50px;
-  background-color: $bg-color;
+#about {
+  padding: 10%;
+  background: $gradient-bg-color;
 }
 
 /*-----------------------------------------------------------
-    6. Team
+    5. Team
   -------------------------------------------------------------*/
 .team {
   padding: 100px 50px;
@@ -385,77 +253,31 @@ p,
 
   .profile {
     margin: 5px 20px;
-    color: $third-color;
+    color: $primary-txt-color;
   }
 }
 
 /*-----------------------------------------------------------
-    7. Contact
+    6. Follow
   -------------------------------------------------------------*/
-.contact {
-  padding-top: 100px;
-  max-height: 650px;
+.follow {
+  background: $gradient-bg-color;
+  border-radius: 1.5rem;
+  font-size: $base-font-size;
+  font-weight: 500;
+  color: $primary-txt-color;
 
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
+  &:hover {
+    color: inherit !important;
+    background-position: right center;
   }
 }
 
-.email input {
-  width: 100%;
-  height: 60px;
-  background-color: $input-bg-color;
-  border: none;
-  padding: 0px 20px;
-  color: $primary-color;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: $primary-color;
-  font-weight: 600;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: $primary-color;
-  font-weight: 600;
-}
-
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: $primary-color;
-  font-weight: 600;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: $primary-color;
-  font-weight: 600;
-}
-
-textarea {
-  background-color: $input-bg-color;
-  border: none;
-  width: 100%;
-  padding: 20px;
-  margin-top: 15px;
-  color: $primary-color;
-  font-weight: 600;
-}
-
 /*-----------------------------------------------------------
-    8. Footer
+    7. Footer
   -------------------------------------------------------------*/
 footer {
-  background-color: $primary-color;
-  width: 100%;
-  min-height: 250px;
-  text-align: center;
-  padding: 60px 0px 0px 0px;
+  background-color: $primary-bg-color;
 }
 
 footer h5 {
@@ -478,7 +300,7 @@ footer h5 {
 }
 
 .contact-nav a:hover {
-  color: $secondary-color;
+  color: $primary-txt-color;
 }
 
 footer h6 {
@@ -500,12 +322,12 @@ footer h6 {
 }
 
 .social li a:hover {
-  color: $secondary-color;
+  color: $primary-txt-color;
   transition: all 0.3s ease;
 }
 
 /*-----------------------------------------------------------
-    9. Responsive
+    8. Responsive
   -------------------------------------------------------------*/
 @media (max-width: 2000px) {
   .hero img {
