@@ -95,17 +95,16 @@ body {
 
 h1,
 .h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: calc(2rem + 3.3vw);
+  font-weight: 600;
   margin-bottom: 20px;
   letter-spacing: -3px;
 }
 
 h2,
 .h2 {
-  font-size: 2.5rem;
+  font-size: calc(1.6rem + 1vw) !important;
   font-weight: 200;
-  line-height: 3.5rem;
   margin-bottom: 50px;
   color: #ffffff;
 }
@@ -152,13 +151,13 @@ p,
   -------------------------------------------------------------*/
 #hero {
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background: center no-repeat url("../images/splash.svg");
 }
 
 #hero .value {
   margin: auto;
-  padding: 15% 1%;
+  padding: 13% 1%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -186,37 +185,19 @@ p,
   color: #ffffff;
 }
 
-.hero-btns {
-  margin-bottom: 350px;
-}
-
-.hero img {
-  position: absolute;
-  top: 0;
-  right: 15vw;
-  z-index: -9;
-  margin-top: 50px;
-  height: 50rem;
-}
-
-.hero h1 {
-  margin-top: 200px;
-}
-
-.hero p {
-  color: #ffffff;
-  margin-bottom: 50px;
-  font-size: 1.6rem;
-  max-width: 40vw;
-}
-
 /*-----------------------------------------------------------
    4. About
   -------------------------------------------------------------*/
 #about {
-  padding: 10%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#5b9279), color-stop(99.98%, #4f7f95), color-stop(99.99%, #508193), color-stop(100%, rgba(79, 127, 150, 0)), to(rgba(79, 127, 150, 0)));
-  background: linear-gradient(#5b9279 0%, #4f7f95 99.98%, #508193 99.99%, rgba(79, 127, 150, 0) 100%, rgba(79, 127, 150, 0) 100%);
+  margin-top: -20vh;
+  background: #499578;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 149, 120, 0)), color-stop(20%, #499578), color-stop(50%, #448c86), color-stop(70%, #408194), to(black));
+  background: linear-gradient(rgba(73, 149, 120, 0) 0%, #499578 20%, #448c86 50%, #408194 70%, black 100%);
+}
+
+#about .container {
+  padding: 20vw 1vw;
+  min-height: 500px;
 }
 
 /*-----------------------------------------------------------
@@ -246,8 +227,9 @@ p,
     6. Follow
   -------------------------------------------------------------*/
 .follow {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5b9279), color-stop(99.98%, #4f7f95), color-stop(99.99%, #508193), color-stop(100%, rgba(79, 127, 150, 0)), to(rgba(79, 127, 150, 0)));
-  background: linear-gradient(#5b9279 0%, #4f7f95 99.98%, #508193 99.99%, rgba(79, 127, 150, 0) 100%, rgba(79, 127, 150, 0) 100%);
+  background: #499578;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #499578), color-stop(50%, #448c86), color-stop(99.99%, #408194));
+  background: linear-gradient(#499578 20%, #448c86 50%, #408194 99.99%);
   border-radius: 1.5rem;
   font-size: 1rem;
   font-weight: 500;
@@ -255,8 +237,23 @@ p,
 }
 
 .follow:hover {
+  text-decoration: none;
   color: inherit !important;
-  background-position: right center;
+  background: #408194;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #408194), color-stop(50%, #448c86), color-stop(99.99%, #499578));
+  background: linear-gradient(#408194 20%, #448c86 50%, #499578 99.99%);
+  --webkit-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.follow:active, .follow:focus {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #28748b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #206e86), color-stop(50%, #1f8179), color-stop(99.99%, #208a61));
+  background: linear-gradient(#206e86 20%, #1f8179 50%, #208a61 99.99%);
 }
 
 /*-----------------------------------------------------------
