@@ -289,6 +289,10 @@ p,
 /*-----------------------------------------------------------
     4. Header
   -------------------------------------------------------------*/
+#home {
+  min-height: 80vh;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #000000;
   font-size: 1.1rem;
@@ -324,7 +328,7 @@ p,
 
 .hero img {
   position: absolute;
-  top: 0;
+  top: -60px;
   right: 15vw;
   z-index: -9;
   margin-top: 50px;
@@ -650,6 +654,9 @@ footer h6 {
 }
 
 @media (max-width: 575px) {
+  #home {
+    min-height: auto !important;
+  }
   .service-box {
     padding: 20px 25px;
     max-width: 300px;
